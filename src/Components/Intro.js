@@ -1,0 +1,22 @@
+import React from 'react'
+import Questions from './Questions';
+
+function Intro() {
+
+    return (
+        <main className='intro-page'>
+            
+            <h1 className='app-title'>Quizzical</h1>
+            <p className='app-description'>Some description if needed</p>
+            <button 
+                className='start-btn'
+                
+            >
+                Start Quiz
+            </button>
+            
+        </main>
+    )
+}
+
+export default Intro;

@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    color: #293264;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #eff3fd;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.intro-page {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 180px auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.app-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37px;
+    margin: 12px;
+}
+
+.app-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    margin-bottom: 30px;
+}
+
+.start-btn {
+    width: 193px;
+    height: 52px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: #4D5B9E;
+    color: white;
+}
+
+
+
+
+/*Questions Page */
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    justify-content: left;
+    text-align: left;
+    margin: 50px 80px;
+}
+
+.question {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 12px;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    margin-bottom: 15px;
+}
+
+.options > button {
+    border: .8px solid #4D5B9E;
+    background: none;
+    border-radius: 8px;
+    padding: 3px 15px;
+    height: 21px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    text-align: center;
+    color: #293264;
+}
+
+.divider {
+    max-width: 400px;
+    margin-bottom: 15px;
+    border: 0.794239px solid #DBDEF0;
+    transform: rotate(-0.05deg);
+}
