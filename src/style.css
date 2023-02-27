@@ -40,8 +40,8 @@ body {
 }
 
 .start-btn {
-    width: 193px;
-    height: 52px;
+    width: 150px;
+    height: 45px;
     border-radius: 15px;
     border: none;
     cursor: pointer;
@@ -95,4 +95,15 @@ body {
     margin-bottom: 15px;
     border: 0.794239px solid #DBDEF0;
     transform: rotate(-0.05deg);
+}
+
+.submit-btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: #4D5B9E;
+    color: white;
+    margin-top: 20px;
 }

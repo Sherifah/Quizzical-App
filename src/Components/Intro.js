@@ -1,7 +1,7 @@
 import React from 'react'
 import Questions from './Questions';
 
-function Intro() {
+function Intro(props) {
 
     return (
         <main className='intro-page'>
@@ -10,6 +10,7 @@ function Intro() {
             <p className='app-description'>Some description if needed</p>
             <button 
                 className='start-btn'
+                onClick={props.handleClick}
                 
             >
                 Start Quiz
