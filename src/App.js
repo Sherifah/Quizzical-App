@@ -5,9 +5,17 @@ import {nanoid} from 'nanoid'
 
 function App() {
 
+  const [quizStart, setQuizStart] = useState(false)
+
+  function handleStart() {
+    setQuizStart(true)
+  }
+
   return (
-    <div>
-      <Questions />
+    <div className="quizzical">
+      {quizStart ? 
+        <Questions /> : 
+        <Intro handleStart={handleStart} />}
     </div>
   )
 }

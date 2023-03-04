@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import Question from './Question'
 
-function Questions() {
+function Questions(props) {
 
     const [questions, setQuestions] = useState([])
   
@@ -15,21 +15,23 @@ function Questions() {
     const questionList = questions.map((item) => {
     return (
       <Question
+        
         question= {item.question}
         answer= {item.correct_answer}
+        id={item.question}
          />
     ) 
   })
 
     return (
         <main className='questions'>
-            {questionList}
-            <button
-                className='submit-btn'
-                
-            >
-                Check Answers
-            </button>
+          <h1 className='app-title'>Quizzical</h1>
+          {questionList}
+          <button
+              className='submit-btn'    
+          >
+              Check Answers
+          </button>
         </main>
     )
 }

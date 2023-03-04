@@ -10,7 +10,7 @@ function Intro(props) {
             <p className='app-description'>Some description if needed</p>
             <button 
                 className='start-btn'
-                onClick={props.handleClick}
+                onClick={props.handleStart}
                 
             >
                 Start Quiz

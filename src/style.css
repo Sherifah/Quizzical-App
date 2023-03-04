@@ -1,5 +1,12 @@
-* {
+/* RESETS */
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+}
+*:focus {
+    outline: 3px dashed #228bec;
+    outline-offset: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -8,11 +15,20 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 body {
-    padding: 0;
-    margin: 0;
+    width: 100%;
+    max-width: 68rem;
+    margin: 0 auto;
     background-color: #eff3fd;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+.quizzical {
+    background: #fff;
+    margin: 2rem 0 4rem 0;
+    padding: 1rem;
+    position: relative;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
 
 .intro-page {
     display: flex;
@@ -30,6 +46,8 @@ body {
     font-weight: 700;
     line-height: 37px;
     margin: 12px;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
 .app-description {
